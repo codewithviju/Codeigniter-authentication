@@ -1,0 +1,16 @@
+CREATE SCHEMA `codeigniter` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ;
+
+CREATE TABLE `codeigniter`.`isuser` (
+  `UserID` INT NOT NULL AUTO_INCREMENT,
+  `Username` VARCHAR(45) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NULL DEFAULT NULL,
+  `Email` VARCHAR(45) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NULL DEFAULT NULL,
+  `Password` VARCHAR(45) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NULL DEFAULT NULL,
+  PRIMARY KEY (`UserID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_unicode_ci;
+
+ALTER TABLE `codeigniter`.`isuser` 
+CHANGE COLUMN `Password` `Password` VARCHAR(255) NULL DEFAULT NULL ;
+
+
